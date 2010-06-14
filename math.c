@@ -23,7 +23,7 @@ int main()
     char buffer[1024];
     
     
-    printf("Please type a mathmatical expression in the following format\n<Number><Operator(+-*/)><number>\n");
+    printf("Please type a mathmatical expression in the following format\n<Number><Operator(+-*/%%)><number>\n");
     printf("Formula: ");
     scanf("%f%c%f",&first,&operator,&second);    
     dec_operator = operator_decode(operator);
