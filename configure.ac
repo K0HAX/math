@@ -3,6 +3,7 @@
 
 AC_PREREQ([2.67])
 AC_INIT(X8math, 0.1, michael@xcelor8.com)
+#AM_CFLAGS = -O0
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/math.c])
 AC_CONFIG_HEADERS([src/config.h])

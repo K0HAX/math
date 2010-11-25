@@ -1,0 +1,4 @@
+Version 0.1
+	Functional release.
+	Autoconfig bugs fixed.
+	CFLAG force set to -O0, with any optimization, compiled output fails.

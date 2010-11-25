@@ -1,4 +1,11 @@
 /* src/config.h.in.  Generated from configure.ac by autoheader.  */
+#include <stdio.h>
+#include "operator_decode.c"
+#include "add.c"
+#include "subtract.c"
+#include "multiply.c"
+#include "devide.c"
+#include "modulus.c"
 
 /* Name of package */
 #undef PACKAGE

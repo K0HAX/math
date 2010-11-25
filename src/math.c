@@ -15,7 +15,7 @@ int main()
 {
     float first = 0;
     float second = 0;
-    char operator[2];
+    char m_operator[2];
     int dec_operator = 0;
     float sum = 0;
     float devision = 0;
@@ -25,8 +25,13 @@ int main()
     
     printf("Please type a mathmatical expression in the following format\n<Number><Operator(+-*/%%)><number>\n");
     printf("Formula: ");
-    scanf("%f%c%f",&first,&operator,&second);    
-    dec_operator = operator_decode(operator);
+
+    if(!scanf("%f%c%f",&first,&m_operator,&second))
+    {
+	return 1;
+    }
+
+    dec_operator = operator_decode(m_operator);
     
     /* 1 is add, 2 is subtract, 3 is multiply, 4 is devide, 0 is error. */
     
@@ -62,6 +67,10 @@ int main()
     
     printf("%s", buffer);
     printf("\nPress enter to continue...");
-    scanf("%c%c",&buffer,&buffer);
+
+    if(!scanf("%c%c",buffer,buffer))
+    {
+	return 1;
+    }
     /* system("pause"); */
 }
