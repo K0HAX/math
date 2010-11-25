@@ -1,3 +1,6 @@
+Version 0.3
+	The program will no longer auto-close upon finishing a calculation.
+
 Version 0.2
 	The commands "make dist" and "make distcheck" work now.
 

@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.67])
-AC_INIT(X8math, 0.2, michael@xcelor8.com)
+AC_INIT(X8math, 0.3, michael@xcelor8.com)
 #AM_CFLAGS = -O0
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/math.c])
