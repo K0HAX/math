@@ -13,6 +13,9 @@
 
 int main()
 {
+  char buffer[1024];
+  while(1)
+  {
     float first = 0;
     float second = 0;
     char m_operator[2];
@@ -20,10 +23,10 @@ int main()
     float sum = 0;
     float devision = 0;
     char syntax_error[1024];
-    char buffer[1024];
     
     
     printf("Please type a mathmatical expression in the following format\n<Number><Operator(+-*/%%)><number>\n");
+    printf("Or type any other charecter as an operator to quit.\n");
     printf("Formula: ");
 
     if(!scanf("%f%c%f",&first,&m_operator,&second))
@@ -63,9 +66,11 @@ int main()
     if(dec_operator == 0)
     {
                     sprintf(buffer,"You entered an invalid operator, valid options are: +,-,*,/,%%\n");
+                    break;
     }
-    
     printf("%s", buffer);
+    printf("\n\n");
+  }
     printf("\nPress enter to continue...");
 
     if(!scanf("%c%c",buffer,buffer))
