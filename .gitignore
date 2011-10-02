@@ -2,3 +2,10 @@ math
 src/.deps
 .deps
 autom4te.cache
+Makefile
+config.log
+config.status
+src/Makefile
+src/*.o
+src/config.h
+src/stamp-h1
